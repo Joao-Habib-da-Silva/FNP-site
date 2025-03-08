@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    cursor: url("Normal\ Select.cur"), default;
+    background: linear-gradient(to bottom, #000, #10002b);
+}
+h1, p {
+    cursor: url("Text\ Select.cur"), text;
+}
+::selection {
+    background-color: #dabfff;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    height: 15vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: 10px;
+    align-items: center;
+    font-family: 'poppins';
+}
+
+header li {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 1.5rem;
+
+}
+
+a {
+    cursor: url(Link\ Select.cur), pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+
+header a:hover {
+    color: #edf2f4;
+    transition: 0.5s ease-in-out;
+}
+
+header i {
+    transition: 0.5s ease-in-out;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    cursor: url("Link\ Select.cur"), pointer;
+}
+
+header i:nth-child(odd) {
+    margin-left: 25px;
+}
+
+header i:hover {
+    color: #edf2f4;
+    transition: 0.5s ease-in-out;
+}
+
+footer i {
+    cursor: url("Link\ Select.cur"), pointer;
+}

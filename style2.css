@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to bottom, #04052e, #02010a);
+    color: white;
+}
+#navbar {
+    position: fixed;
+    right: 0;
+    margin-top: 100px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: 10px;
+    width: 300px;
+    height: 100vh;
+    padding: 70px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    transform: translateX(300px);
+}
+
+#navbar.open {
+    transition: 0.5s ease-in-out;
+    transform: translateX(0px);
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+
+#navbar li {
+    list-style: none;
+    margin-top: 25px;
+}
