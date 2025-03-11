@@ -10,13 +10,12 @@ body {
     position: relative;
     min-height: 100vh;
     cursor: url("Normal\ Select.cur"), default;
-    background: linear-gradient(to bottom, #000, #10002b);
 }
 h1, p {
     cursor: url("Text\ Select.cur"), text;
 }
 ::selection {
-    background-color: #dabfff;
+    background-color: #bf97f6;
     color: white;
 }
 header {
@@ -27,11 +26,16 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: 10px;
+    backdrop-filter: blur(10px);
     align-items: center;
     font-family: 'poppins';
 }
-
+header a {
+        text-shadow: 0px 0px 5px #fff;
+}
+header a:hover i:hover {
+        text-shadow: 0px 0px 5px #393d3f;
+} 
 header li {
     display: inline-block;
     margin-left: 25px;
